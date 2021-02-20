@@ -47,8 +47,8 @@ double __pes__try(double a, double b, double xa, double ya, double xb, double yb
     (
         display("+"),
         total__iterations = total__iterations + 1.,
-        ya < yb ? b = xb, xb = xa, yb = ya, xa = a + mphi * (b - a), __pes__try(a, b, xa, fun(xa), xb, yb) :
-            a = xa, xa = xb, ya = yb, xb = b - mphi * (b - a), __pes__try(a, b, xa, ya, xb, fun(xb))
+        (ya < yb) ? (b = xb, xb = xa, yb = ya, xa = a + mphi * (b - a), __pes__try(a, b, xa, fun(xa), xb, yb)) :
+            (a = xa, xa = xb, ya = yb, xb = b - mphi * (b - a), __pes__try(a, b, xa, ya, xb, fun(xb)))
     );
 }
 
