@@ -2,3 +2,4 @@
 ## [Пищик Е.С. М8О-06Б-19](https://github.com/Pe4enIks/)
 Лабораторные работы:
 1. [вариант 26.02.2001](/sp_exercise_01/Lab01.pdf)
+2. [вариант z - (z-2)^3 - atan(z) - 1, z = x - 21/22](/sp_exercise_02/Lab02.pdf)
