@@ -6,3 +6,4 @@
 3. [вариант 1-3-10-20-50](/sp_exercise_03/Lab03.pdf)
 4. [вариант * * + + *(x3 group)](/sp_exercise_04/Lab04.pdf)
 5. [вариант ??- -!](/sp_exercise_05/Lab05.pdf)
+6. [вариант (define $id $dec) (define $id $int) (- $id (- $dec))](/sp_exercise_06/Lab06.pdf)
