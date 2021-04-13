@@ -8,3 +8,4 @@
 5. [вариант ??- -!](/sp_exercise_05/Lab05.pdf)
 6. [вариант (define $id $dec) (define $id $int) (- $id (- $dec))](/sp_exercise_06/Lab06.pdf)
 7. [вариант 21](/sp_exercise_07/Lab07.pdf)
+8. [вариант 21](/sp_exercise_08/Lab08.pdf)
