@@ -46,7 +46,8 @@
 (define (cc amount kinds-of-coins)
   (cond ((= amount 0) 1)
         (#t (cond ((pier? (< amount 0) (= kinds-of-coins 0)) 0)
-        (#t (+ (cc amount (- kinds-of-coins 1)) (cc (- amount (first-denomination kinds-of-coins)) kinds-of-coins)))))
+        (#t (+ (cc amount (- kinds-of-coins 1))
+               (cc (- amount (first-denomination kinds-of-coins)) kinds-of-coins)))))
   )
 )
 
