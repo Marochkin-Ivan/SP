@@ -43,12 +43,14 @@
  (cond((close-enough? a b)(* (+ a b)0.5))
       (#t (let() (display "+")
              (set! total-iterations (+ total-iterations 1))
-             (cond((< ya yb) (set1 a b xa xb ya yb))
-                  (#t (set2 a b xa xb ya yb))
+             (cond((< ya yb) (set! b xb))(#t (set! a xa)))
+             (cond((< ya yb) (set! xb xa))(#t (set! xa xb)))
+             (cond((< ya yb) (set! yb ya))(#t (set! ya yb)))
+             (cond((< ya yb) (set! xa (+ a (* mphi(- b a)))))(#t (set! xb (- b (* mphi(- b a))))))
+             (cond((< ya yb) (try a b xa (fun xa) xb yb))(#t (try a b xa ya xb (fun xb))))
              );cond...
       ));let...
  );if...
-)
 (define (close-enough? x y)
   (<(abs (- x y))tolerance))
 (define tolerance .001)
