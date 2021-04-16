@@ -51,7 +51,7 @@
 )
 (define (close-enough? x y)
   (<(abs (- x y))tolerance))
-(define tolerance 0.001)
+(define tolerance .001)
 (define total-iterations 0)
 (define xmin 0)
 (set! xmin(golden-section-search a b))
